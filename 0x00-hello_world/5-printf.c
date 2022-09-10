@@ -6,6 +6,6 @@
 */                                                                                                                              
 int main(void)                                                                                                                            
 {                                                                                                                                         
-        printf("with grammer, but the outcome is a pieces of art,\n");                                                                    
+        printf("with grammer,but the outcome is a piece of art,\n");                                                                    
         return (0);                                                                                                                       
 }
