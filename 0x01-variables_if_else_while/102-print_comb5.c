@@ -1,58 +1,41 @@
 #include <stdio.h>
 /**
- * main - program that prints all possible different combinations of 2 diggits.
- * Return: 0
+ * main - print possible combination of two 2-digit
+ * numbers
+ *
+ * Return: returns zero at the end
  */
-void print(int *num, int n)
 
+
+int main(void)
 {
-    int i;
+    int i, p;
 
-    for ( i = 0 ; i < n ; i++)
 
-        printf("%d ", num[i]);
 
-    printf("\n");
-}
-
-int main()
-
-{
-
-    int num[N];
-
-    int *ptr;
-
-    int temp;
-
-    int i, n, j;
-
-    printf("\nHow many number you want to enter: ");
-
-        scanf("%d", &n);
-
-    printf("\nEnter a list of numbers to see all combinations:\n");
-
-    for (i = 0 ; i < n; i++)
-
-        scanf("%d", &num[i]);
-
-    for (j = 1; j <= n; j++) {
-
-        for (i = 0; i < n-1; i++) {
-
-            temp = num[i];
-
-            num[i] = num[i+1];
-
-            num[i+1] = temp;
-
-            print(num, n);
-
-	}
-
+    for (i = 0; i < 100; i++)
+    {
+        for (p = 0; p < 100; j++)
+        {
+            if (p > i)
+            {
+                putchar((i / 10) + '0');
+                putchar((i % 10) + '0');
+                putchar(' ');
+                putchar((p / 10) + '0');
+                putchar((p % 10) + '0');
+                if (i != 98)
+                {
+                    putchar(',');
+                    putchar(' ');
+                }
+            }
+        }
     }
 
-    return 0;
 
+    putchar('\n');
+    return (0);
 }
+
+
