@@ -5,16 +5,20 @@
  *
  * Return: returns zero at the end
  */
-int main(void)
+int main()
 {
- if (ni != n2 && ni n1 < n2)	
+	int n1 = 0, n2,
+
+	while(n1 <= 99)	    
         {
-            if (p > i)
+            n2 = n1;
+
+	    while(n2 <=99)
             {
 
                 putchar((n1 / 10) + 48);
                 putchar((n1 % 10) + 48);
-                if (i != 98)
+                putchar(' ');
 		putchar((n2 / 10) + 48);
 		putchar((n2 % 10) +48);	
 
