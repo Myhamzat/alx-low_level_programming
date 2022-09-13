@@ -1,1 +1,1 @@
-Functions, nested loops programing in C
+Functions, nested loops programming in C
