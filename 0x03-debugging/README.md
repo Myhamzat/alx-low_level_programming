@@ -1,1 +1,1 @@
-0x03. C - Debugging
+debugging c programming language
